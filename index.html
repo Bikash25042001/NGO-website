@@ -1,11 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Abinash</title>
+        <link rel="stylesheet" type="text/css" href="asset/css/mediaqury.css" />
+        <link rel="stylesheet" type="text/css" href="asset/css/style.css" />
+        <?php include_once('header.php'); ?>
+    </head>
+    <body>
+        <?php
+            include_once('topbar.php');
+            include_once('navbar.php');
+            include_once('slider.php');
+            ?>
+        <div class="container crdbox">
+            <!-- TOP CARD AREA STARTS -->
+            <div class="card mb-4 abc">
+                <div class="row no-gutters text-center d-flex align-items-stretch">
+                    <!-- Column 1: Food Donation -->
+                    <div class="col-md-3 border-right d-flex flex-column align-items-center justify-content-center p-3 text-center">
+                        <i class="fas fa-utensils fa-3x mb-2 lekha"></i>
+                        <h5 class="mb-2 lekha">Food Donation</h5>
+                        <p class="mb-0">
+                            We collect and distribute nutritious food to underprivileged families and children to fight hunger and support better health through consistent and compassionate food donation drives.
+                        </p>
+                        <a href="#" class="lekha font-weight-bold text-uppercase mt-5" data-toggle="modal" data-target="#donationModal" style="cursor: pointer;">
+                        → Donate Now
+                        </a>
+                    </div>
+                    <!-- Column 2: Medical Care -->
+                    <div class="col-md-3 border-right d-flex flex-column align-items-center justify-content-center p-3 text-center">
+                        <i class="fas fa-medkit fa-3x mb-2 lekha"></i>
+                        <h5 class="mb-2 lekha">Medical Care</h5>
+                        <p class="mb-0">
+                            Our initiative provides access to basic healthcare, medicines, and checkups to poor families and children in need, improving lives through regular medical support and outreach services.
+                        </p>
+                        <a href="#" class="lekha font-weight-bold text-uppercase mt-5" data-toggle="modal" data-target="#donationModal" style="cursor: pointer;">
+                        → Donate Now
+                        </a>
+                    </div>
+                    <!-- Column 3: Child Education -->
+                    <div class="col-md-3 border-right d-flex flex-column align-items-center justify-content-center p-3 text-center">
+                        <i class="fas fa-book fa-3x mb-2 lekha"></i>
+                        <h5 class="mb-2 lekha">Child Education</h5>
+                        <p class="mb-0">
+                            Providing quality education and learning resources to underprivileged children to empower them with knowledge, skills, and a brighter future through dedicated programs and tutoring.
+                        </p>
+                        <a href="#" class="lekha font-weight-bold text-uppercase mt-4" data-toggle="modal" data-target="#donationModal" style="cursor: pointer;">
+                        → Donate Now
+                        </a>
+                    </div>
+                    <!-- Column 4: Join Us -->
+                    <div class="col-md-3 text-dark p-3 d-flex flex-column align-items-center justify-content-center img2 text-center" style="background-color: #FD6047;">
+                        <i class="fas fa-users fa-3x mb-2 text-white"></i>
+                        <h5 class="mb-2 text-white">Join Us</h5>
+                        <p class="mb-2 text-white">
+                            Be part of a life-changing mission. Support our cause and contribute your time, skills, or resources to uplift underprivileged communities across the region.
+                        </p>
+                        <a href="contact.php" class="text-white font-weight-bold mt-4" style="text-decoration: none;">
+                        Join Us →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- TOP CARD V AREA ENDS   -->
+            <!-- ABOUT US SECTION STRAT -->
+            <div class="row mt-5">
+                <!-- Column 1: About Us Content -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="text-center text-md-left lekha">ABOUT US</h3>
+                    <h1 class="font-weight-bold text-center text-md-left text-dark">Why We Are In An NGO.</h1>
+                    <hr>
+                    <p class="text-justify">
+                        We are all aware of NGOs (Non-Governmental Organizations), non-profit organizations dedicated to addressing social, environmental, humanitarian, and other issues not adequately handled by government bodies or the private sector. Although our professions
+                        may differ, we share a common desire to contribute to social causes... This shared passion led us to establish an NGO. Through this organization, we aim to focus on public interest work and positively impact society. We seek your
+                        support and involvement to help us achieve the success of this mission.
+                        <a href="aboutus.php">Read more</a>
+                    </p>
+                    <div class="text-center text-md-left">
+                        <button class="btn dbtn ml-md-3" data-toggle="modal" data-target="#donationModal">Donate</button>
+                    </div>
+                </div>
+                <!-- Column 2: Image + Icon Card -->
+                <div class="col-md-4 mb-4 text-center">
+                    <img src="https://demo.bosathemes.com/bosa/charity-fundraiser/wp-content/uploads/sites/70/2022/11/img10.jpg" alt="Charity Image" class="img-fluid mb-3 img1" />
+                    <div class="card w-100 brdrd">
+                        <div class="card-body d-flex align-items-center  brdrd">
+                            <!-- Icon on the left -->
+                            <div class="mr-3">
+                                <i class="fa fa-trophy fa-2x text-warning"></i>
+                            </div>
+                            <!-- Text on the right -->
+                            <div>
+                                <h3 class="card-title mb-0 text-white">Honoring every year </h3>
+                                <p class="card-text mb-0 text-white">of giving, caring, and doing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 3: Second Image -->
+                <div class="col-md-4 mb-4 text-center">
+                    <img src="https://demo.bosathemes.com/bosa/charity-fundraiser/wp-content/uploads/sites/70/2022/11/img6-683x1024.jpeg" alt="Volunteering" class="img-fluid img2" />
+                </div>
+            </div>
+            <!-- ABOUT US AREA END -->
+            <!-- BLOG AREA START -->
+            <div class="mt-3">
+                <h3 class="text-center font-weight-bold lekha mb-4">Together We Fund Change for Every Cause</h3>
+            </div>
+            <div class="row">
+                <!-- Card 1: Tree Plantation -->
+                <div class="col-md-4 mb-4">
+                    <div class="card position-relative overflow-hidden" style="cursor: pointer;">
+                        <div style="overflow: hidden;">
+                            <img src="image/tree_plantation/tree111.jpg" class="card-img-top img-fluid" alt="Tree Plantation" style="height: 200px; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+                        <button class="btn dbtn position-absolute" style="top: 30%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" data-toggle="modal" data-target="#donationModal">
+                        Donate
+                        </button>
+                        <div class="card-body">
+                            <h5 class="card-title lekha">Tree Plantation Drive</h5>
+                            <p class="card-text">Help us plant 5,000 trees in deforested villages to fight climate change and restore ecosystems.</p>
+                            <div class="d-flex justify-content-between mb-1">
+                                <small class="text-muted">🎯 Goal: ₹5,00,000</small>
+                                <small class="text-success">🙌 327 Donors</small>
+                            </div>
+                            <div class="progress mb-1">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2: Skill Development -->
+                <div class="col-md-4 mb-4">
+                    <div class="card position-relative overflow-hidden" style="cursor:pointer;">
+                        <img src="image/faq.jpg" class="card-img-top img-fluid" alt="Skill Development" style="height: 200px; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <button class="btn dbtn position-absolute" style="top: 30%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" data-toggle="modal" data-target="#donationModal">Donate</button>
+                        <div class="card-body">
+                            <h5 class="card-title lekha">Youth Skill Development</h5>
+                            <p class="card-text">Support vocational training for 1,000 rural youths to make them employable and self-reliant.</p>
+                            <div class="d-flex justify-content-between mb-1">
+                                <small class="text-muted">🎯 Goal: ₹5,00,000</small>
+                                <small class="text-success">🙌 327 Donors</small>
+                            </div>
+                            <div class="progress mb-1">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3: Girl Education -->
+                <div class="col-md-4 mb-4">
+                    <div class="card position-relative overflow-hidden" style="cursor:pointer;">
+                        <img src="image/free_education/freeeducation111.jpg" class="card-img-top img-fluid" alt="Girl Education" style="height: 200px; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        <button class="btn dbtn position-absolute" style="top: 30%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" data-toggle="modal" data-target="#donationModal">Donate</button>
+                        <div class="card-body">
+                            <h5 class="card-title lekha">Educate a Girl, Empower a Nation</h5>
+                            <p class="card-text">Enable 500 girls from poor families to attend school by covering tuition, books, and uniforms.</p>
+                            <div class="d-flex justify-content-between mb-1">
+                                <small class="text-muted">🎯 Goal: ₹5,00,000</small>
+                                <small class="text-success">🙌 327 Donors</small>
+                            </div>
+                            <div class="progress mb-1">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 29.5%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">29.5%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BLOG AREA ENDS -->
+            <!-- UPCOMING EVENT START -->
+            <div class="mt-3">
+                <h3 class="text-center font-weight-bold lekha mb-4">Upcoming Events</h3>
+                <!-- Event 1 -->
+                <div class="card border-0 mb-4 abc" style="background-color:#FAFAFA;">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-md-3">
+                            <img src="image/tree_plantation/tree114.jpg" class="img-fluid w-100 object-fit-cover aabbcc ml-3" style="height: 180px;" alt="Tree Plantation">
+                        </div>
+                        <div class="col-md-9 px-4">
+                            <h5 class="lekha mt-3">Tree Plantation Drive</h5>
+                            <p>Join us for a large-scale tree plantation event across city parks and schools to raise awareness about the environment and promote green living.</p>
+                            <p>Volunteers of all ages are welcome. Saplings, tools, and refreshments will be provided. Let’s plant a better tomorrow together.</p>
+                            <p><strong>Date:</strong> June 15, 2025 &nbsp; | &nbsp; <strong>Location:</strong> City Parks &nbsp; | &nbsp; <strong>Time:</strong> 07.00  &nbsp; | &nbsp; <a href="event-blog.php"><strong> → </strong></a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="row align-items-center mb-4">
+                    <div class="col-md-3">
+                        <img src="image/food_donation/fooddistribution.jpg" class="img-fluid w-100 object-fit-cover aabbcc ml-3" style="height: 180px;" alt="Food Distribution">
+                    </div>
+                    <div class="col-md-9 px-4">
+                        <h5 class="lekha">Food Distribution for Homeless</h5>
+                        <p>Be part of our weekend outreach program to provide warm meals and hygiene kits to homeless individuals in the city center.</p>
+                        <p>Your participation and donations will help bring dignity and hope to those in need. Sign up to volunteer or sponsor meals.</p>
+                        <p><strong>Date:</strong> June 22, 2025 &nbsp; | &nbsp; <strong>Location:</strong> City Center &nbsp; | &nbsp; <strong>Time:</strong> 07.00 &nbsp; | &nbsp; <a href="event-blog.php"><strong> → </strong></a></p>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="card border-0 mb-4 abc" style="background-color:#FAFAFA;">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-md-3">
+                            <img src="image/free_education/freeeducation.jpg" class="img-fluid w-100 object-fit-cover aabbcc ml-3" style="height: 180px;" alt="Education Workshop">
+                        </div>
+                        <div class="col-md-9 px-4">
+                            <h5 class="lekha mt-3">Free Education Workshop</h5>
+                            <p>We’re organizing a community workshop offering free learning sessions in English, Math, and Computer Skills for children and young adults.</p>
+                            <p>Certified teachers and trainers will lead the sessions. Let’s build futures through education—one lesson at a time.</p>
+                            <p><strong>Date:</strong> June 29, 2025 &nbsp; | &nbsp; <strong>Location:</strong> Community Center &nbsp; | &nbsp; <strong>Time:</strong> 07.00 &nbsp; | &nbsp; <a href="event-blog.php"><strong> → </strong></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- UPCOMING EVENT END -->
+            <!-- DONER AREA START  -->
+
+
+         <!-- Wrapper with background image and heading -->
+<!-- <div style="background: url('image/footer_bg/foooterbg.jpg') no-repeat center center; background-size: cover; padding: 60px 0;">
+  <h2 class="text-center mb-5 lekha" style="font-size: 40px; font-weight: bold; text-shadow: 1px 1px 3px rgba(0,0,0,2.0);">DONER</h2>
+<div> You can set background as needed 
+  <svg class="svgcs" viewBox="0 0 1800 100" preserveAspectRatio="xMinYMid meet">
+    <g class="carousel-track">
+      <image href="image/food_donation/food111.jpg" x="0" y="10" height="100" width="120" />
+      <image href="image/free_education/freeeducation.jpg" x="140" y="10" height="100" width="120" />
+      <image href="image/free_education/freeeducation113.jpg" x="280" y="10" height="100" width="120" />
+      <image href="image/animal.jpg" x="420" y="10" height="100" width="120" />
+      <image href="image/fani.jpg" x="560" y="10" height="100" width="120" />
+      <image href="image/food_donation/food111.jpg" x="700" y="10" height="100" width="120" />
+      <image href="image/free_education/freeeducation.jpg" x="840" y="10" height="100" width="120" />
+      <image href="image/animal.jpg" x="980" y="10" height="100" width="120" />
+      <image href="image/fani.jpg" x="1120" y="10" height="100" width="120" />
+      <image href="image/food_donation/food111.jpg" x="1260" y="10" height="100" width="120" />
+      <image href="image/free_education/freeeducation113.jpg" x="1400" y="10" height="100" width="120" />
+      <image href="image/animal.jpg" x="1540" y="10" height="100" width="120" />
+      <image href="image/fani.jpg" x="1680" y="10" height="100" width="120" />
+    </g>
+  </svg>
+</div>
+
+ </div> 
+ -->
+
+
+<!-- Section Container -->
+<div style="position: relative; padding: 40px 0; overflow: hidden;" class="my-5">
+  <!-- Transparent Background Overlay -->
+  <div style="
+    background-image: url('image/footer_bg/foooterbg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;">
+  </div>
+
+  <!-- Content Above Background -->
+  <div style="position: relative; z-index: 5;">
+    <h2 class="text-center  mb-4 lekha" style="font-size: 36px; font-weight: bold; text-shadow: 2px 2px 6px #fff;">
+      DONER
+    </h2>
+
+    <!-- Sliding Wrapper -->
+    <div class="slider-track sldtrc d-flex flex-nowrap overflow-hidden">
+      <!-- Your card items (same as you already have) -->
+      <!-- Repeat cards as needed -->
+      <div class="card m-2" style="width: 150px;">
+        <img src="image/food_donation/food111.jpg" class="card-img-top" alt="Food">
+      </div>
+      <!-- ... other cards ... -->
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/free_education/freeeducation.jpg" class="card-img-top" alt="Education">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/free_education/freeeducation113.jpg" class="card-img-top" alt="Education">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/animal.jpg" class="card-img-top" alt="Animal">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/fani.jpg" class="card-img-top" alt="Fani">
+    </div>
+    <!-- Repeat same cards for infinite loop effect -->
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/food_donation/food111.jpg" class="card-img-top" alt="Food">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/free_education/freeeducation.jpg" class="card-img-top" alt="Education">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/animal.jpg" class="card-img-top" alt="Animal">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/fani.jpg" class="card-img-top" alt="Fani">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/food_donation/food111.jpg" class="card-img-top" alt="Food">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/free_education/freeeducation.jpg" class="card-img-top" alt="Education">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/animal.jpg" class="card-img-top" alt="Animal">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/fani.jpg" class="card-img-top" alt="Fani">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/food_donation/food111.jpg" class="card-img-top" alt="Food">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/free_education/freeeducation.jpg" class="card-img-top" alt="Education">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/animal.jpg" class="card-img-top" alt="Animal">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/fani.jpg" class="card-img-top" alt="Fani">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/food_donation/food111.jpg" class="card-img-top" alt="Food">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/free_education/freeeducation.jpg" class="card-img-top" alt="Education">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/animal.jpg" class="card-img-top" alt="Animal">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/fani.jpg" class="card-img-top" alt="Fani">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/food_donation/food111.jpg" class="card-img-top" alt="Food">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/free_education/freeeducation.jpg" class="card-img-top" alt="Education">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/animal.jpg" class="card-img-top" alt="Animal">
+    </div>
+    <div class="card m-2" style="width: 150px;">
+      <img src="image/fani.jpg" class="card-img-top" alt="Fani">
+    </div>
+</div>
+  </div>
+</div>
+
+
+
+
+            <!-- DONER AREA END -->
+            <!-- VOLENTEAR AREA START  -->
+            <div class="row align-items-center">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                    <h5 class="text-uppercase mb-2 lekha">Best Team</h5>
+                    <div style="width: 400px;">
+                        <h2 class="font-weight-bold display-5 text" style="font-family: 'Lucida Console', 'Courier New', monospace; color: black;">Meet Our Volunteers</h2>
+                        <hr class="mb-4" style="border: 2px solid #FD6047; margin-left: 0; width: 20%; border-radius: 2px;">
+                    </div>
+                    <p class="text-dark" style="width: 400px;">We are proud to introduce our passionate and dedicated team of volunteers who work selflessly to make a difference.</p>
+                </div>
+                <!-- Right Column -->
+                <div class="col-md-6 text-md-right text-center">
+                    <a href="gallary.php" class="btn  btn-lg px-4 ">View All Team</a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card abc h-100">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="image\img27.jpeg" class="card-img" alt="Card image">
+                            </div>
+                            <div class="col-md-8 d-flex flex-column">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h4 class="card-title lekha mb-1">John Doe</h4>
+                                        <p class="card-text mb-2">Some example text.</p>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.facebook.com/" class="text-primary mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+                                        <a href="https://www.instagram.com/" class="text-danger mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+                                        <a href="https://x.com/tweeter?lang=en" class="text-info"><i class="fab fa-twitter fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card abc h-100">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="image\img28.jpeg" class="card-img" alt="Card image">
+                            </div>
+                            <div class="col-md-8 d-flex flex-column">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h4 class="card-title lekha mb-1">Jane Smith</h4>
+                                        <p class="card-text mb-2">Another example text.</p>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.facebook.com/" class="text-primary mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+                                        <a href="https://www.instagram.com/" class="text-danger mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+                                        <a href="https://x.com/tweeter?lang=en" class="text-info"><i class="fab fa-twitter fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card abc h-100">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="image\img29.jpeg" class="card-img" alt="Card image">
+                            </div>
+                            <div class="col-md-8 d-flex flex-column">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h4 class="card-title lekha mb-1">Alice Brown</h4>
+                                        <p class="card-text mb-2">Volunteering enthusiast.</p>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.facebook.com/" class="text-primary mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+                                        <a href="https://www.instagram.com/" class="text-danger mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+                                        <a href="https://x.com/tweeter?lang=en" class="text-info"><i class="fab fa-twitter fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card abc h-100">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="image\img27.jpeg" class="card-img" alt="Card image">
+                            </div>
+                            <div class="col-md-8 d-flex flex-column">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h4 class="card-title lekha mb-1">Michael Lee</h4>
+                                        <p class="card-text mb-2">Community builder.</p>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.facebook.com/" class="text-primary mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+                                        <a href="https://www.instagram.com/" class="text-danger mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+                                        <a href="https://x.com/tweeter?lang=en" class="text-info"><i class="fab fa-twitter fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- GALLARY SECTION START -->
+            <div class="mt-3">
+                <h3 class="text-center lekha"><b>Gallery</b></h3>
+            </div>
+            <div class="text-center mb-4">
+                <hr class="bg-white mx-auto" style="width: 60px; height: 3px;">
+            </div>
+            <div id="clientsCarousel" class="carousel slide mb-5" data-ride="carousel">
+                <div class="carousel-inner" style="width: 100%;">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-sm-4 col-md-3 px-2 mb-2">
+                                <img src="image/tree_plantation/tree111.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Gallery Image">
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 px-2 mb-2">
+                                <img src="image/tree_plantation/tree112.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Gallery Image">
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 px-2 mb-2">
+                                <img src="image/tree_plantation/tree111.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Gallery Image">
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 px-2 mb-2">
+                                <img src="image/tree_plantation/tree112.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Gallery Image">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-sm-4 col-md-3 px-2 mb-2">
+                                <img src="image/tree_plantation/tree111.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Gallery Image">
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 px-2 mb-2">
+                                <img src="image/tree_plantation/tree112.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Gallery Image">
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 px-2 mb-2">
+                                <img src="image/tree_plantation/tree111.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Gallery Image">
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3 px-2 mb-2">
+                                <img src="image/tree_plantation/tree112.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Gallery Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <a class="carousel-control-prev" href="#clientsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #000; border-radius: 50%;"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#clientsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #000; border-radius: 50%;"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- GALLARY SECTION END -->
+        </div>
+        <!-- CONTAINER DIV END  -->
+        <?php include_once('footer.php'); ?>
+        <?php include_once('footer_js.php'); ?>
+    </body>
 </html>
+
+
+
